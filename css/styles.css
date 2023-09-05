@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&family=Poppins&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	border: none;
+	outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+}
+header{
+    padding: 25px;
+}
+
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+li a{
+    font-size: 14px;
+    font-weight: bolder;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .container{
+    gap: 50px;
+    text-align: end;
+    padding: 50px 0px;
+}
+
+.description h1{
+    
+    font-size: 2.5rem;
+    padding-left: 40%;
+    font-size: 50px;
+    line-height: 1.2em;
+}
+
+a{
+    color: #242E52;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    font-weight: bold;
+    color: #232C50;
+}
+
+.seccion__verde{
+    background-color: purple;
+    color: white;
+    padding: 25px;
+}
+.btn_contact{
+    background-color: purple;
+    color: white;
+    padding: 15px 40px 15px 40px;
+    border-radius: 100px;
+    box-shadow: 2px 2px 4px #232C50 ;
+    
+}
+.contacto{
+    display: flex;
+    justify-content: end;
+}
+
+/* section h1{
+    margin-right: 30px;
+} */
+
+.seccion__tarjetas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 40px 100px;
+    gap: 50px;
+
+}
+.seccion__tarjetas .tarjeta{
+    max-width: 400px;
+}
+
+.seccion__perfil .container{
+    display: flex;
+    flex-direction: row;
+    padding: 40px 0px;
+    gap: 50px;
+}
+.seccion__perfil{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0px;
+}
+.titulo__tarjeta{
+    display: flex;
+    flex-direction: row;
+    padding: 30px 0px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.tarjeta p{
+    color: grey;
+}
+.card{
+    max-width: 400px;
+    text-align: center;
+}
+
+.btn__morado{
+    background-color: purple;
+    color: white;
+    padding: 10px 30px 10px 30px;
+    border-radius: 100px;
+}
+
+
+.btn__morado p{
+    color: white;
+    font-weight: bold;
+}
+footer{
+    background-color: #232C50;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    color: white;
+    padding: 50px;
+}
+footer .container{ 
+    display: flex;
+    flex-direction: row; 
+    gap: 150px;
+}
+
+footer .copy{
+    padding-right: 100px;
+}
+
+.enlaces{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+.enlaces ul li a{
+    color: aliceblue;
+}
+input {
+    border-radius: 20px;
+    height: 15px;
+    padding: 10px;
+ }
+@media(max-width:600px){
+    .container{
+        max-width: 85%;
+    }
+    header{
+        padding: 15px 0; 
+    }
+    header .container{
+        max-width: 300px;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav{
+        display: none;
+    }
+    main .container{
+        max-width: 85%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+    }
+    main .container img{
+        width: 100%;
+    }
+    main .container h1{
+        line-height: 1.2em;
+        font-size: 40px;
+        
+    }
+    .description h1{
+        padding: 4% 0%;
+    }
+
+    .seccion__verde{
+        background-color: aqua;
+    }
+    .seccion__tarjetas{
+        padding: 0px 10px;
+    }
+    .seccion__perfil .container{
+        flex-direction: column;
+    }
+
+    .enlaces{
+        display: flex;
+        flex-direction: row;
+      
+        color: white;
+    }
+    footer{
+        background-color: black;
+        padding: 0px; 
+        align-items: center;
+    }
+    footer .container{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        padding: 10px 10px;
+        color: wheat;
+
+    }
+    footer img{
+        height: 30px;
+    }
+    footer .copy{
+        padding: 0px;
+
+    }
+
+
+}
