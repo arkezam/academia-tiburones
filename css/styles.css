@@ -17,7 +17,9 @@ header .container{
 header{
     padding: 25px;
 }
-
+.hamburger{
+    display: none;
+}
 
 nav ul{
     display: flex;
@@ -29,6 +31,12 @@ li a{
     font-size: 14px;
     font-weight: bolder;
 }
+
+nav ul li a:hover{
+    color: #242E52;
+    opacity: 0.6;
+}
+
 
 .container{
     display: flex;
@@ -42,17 +50,21 @@ li a{
 main .container{
     gap: 50px;
     text-align: end;
-    padding: 50px 0px;
+    padding: 50px 0px 100px 0px;
+    margin-top: 100px;
 }
 
 .description h1{
     
     font-size: 2.5rem;
-    padding-left: 40%;
+    padding-left: 20%;
     font-size: 50px;
     line-height: 1.2em;
 }
-
+.description h3{
+    color: black;
+    padding-left: 10%;
+}
 a{
     color: #242E52;
 }
@@ -65,14 +77,28 @@ a{
     color: #232C50;
 }
 
-.seccion__verde{
-    background-color: purple;
-    color: white;
+.seccion__franja{
+    background-color: #8B48BF;
+    color: #FFFFFF;
     padding: 25px;
 }
+
+.seccion__franja .container{
+    display: flex;
+    flex-direction: row;
+    padding: 39px 0px;
+}
+.seccion__franja .container p{
+    max-width: 50%;
+}
+.seccion__franja .container h1{
+    font-size: 40px;
+}
+
+
 .btn_contact{
-    background-color: purple;
-    color: white;
+    background-color: #8B48BF;
+    color: #FFFFFF;
     padding: 15px 40px 15px 40px;
     border-radius: 100px;
     box-shadow: 2px 2px 4px #232C50 ;
@@ -83,9 +109,7 @@ a{
     justify-content: end;
 }
 
-/* section h1{
-    margin-right: 30px;
-} */
+/* section tarjeta*/
 
 .seccion__tarjetas{
     display: flex;
@@ -93,24 +117,14 @@ a{
     flex-wrap: wrap;
     padding: 40px 100px;
     gap: 50px;
+    background-color: #FAFAFA;
 
 }
 .seccion__tarjetas .tarjeta{
     max-width: 400px;
 }
 
-.seccion__perfil .container{
-    display: flex;
-    flex-direction: row;
-    padding: 40px 0px;
-    gap: 50px;
-}
-.seccion__perfil{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px 0px;
-}
+
 .titulo__tarjeta{
     display: flex;
     flex-direction: row;
@@ -122,60 +136,141 @@ a{
 .tarjeta p{
     color: grey;
 }
+
+/* Seccion perfiles */
+
 .card{
+    padding: 0px 20px 20px 20px;
     max-width: 400px;
     text-align: center;
+    background-color: #FAFAFA;
 }
-
+.card .card_titulo{
+    padding-bottom: 20px;
+    color: #3F4868;
+    font-weight: bold;
+    margin-top: -20px;
+}
+.card img{
+    position: relative;
+    top: -41px;
+}
 .btn__morado{
-    background-color: purple;
-    color: white;
+    background-color: #8B48BF;
+    color: #FFFFFF;
     padding: 10px 30px 10px 30px;
     border-radius: 100px;
 }
 
 
 .btn__morado p{
-    color: white;
+    color: #FFFFFF;
     font-weight: bold;
 }
-footer{
-    background-color: #232C50;
+
+.seccion__perfil a:hover{
+    opacity: 0.7;
+}
+.seccion__perfil .container{
+    display: flex;
+    flex-direction: row;
+    padding: 40px 0px;
+  
+}
+.seccion__perfil{
     display: flex;
     flex-direction: column;
-    align-items: end;
-    color: white;
-    padding: 50px;
+    align-items: center;
+    padding: 150px 0px;
 }
-footer .container{ 
+.seccion__perfil h2{
+    font-size: 7vh;
+    padding: 10px 0px;
+}
+/* Boton Segunda Franja */
+.seccion__franja .btn_contact{
+    background-color: #FFFFFF;
+    color: #8B48BF;
+
+}
+
+/* Footer */
+
+footer{
+    background-color: #1E1E26;
     display: flex;
-    flex-direction: row; 
-    gap: 150px;
+    flex-direction: column;
+ 
+    color: #FFFFFF;
+    padding: 50px; 
 }
+ 
+
+.container__footer{ 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
 
 footer .copy{
     padding-right: 100px;
+    color: #8C8C94;
 }
 
+.footer__logos{
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+.footer__logos img{
+    height: auto;
+    max-width: 105px;
+}
+
+.icons{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
 .enlaces{
     display: flex;
     flex-direction: row;
-    gap: 40px;
+    gap: 10vw;
+    padding: 0px 50px;
 }
 .enlaces ul li a{
     color: aliceblue;
+    font-weight: normal;
 }
+
+.enlaces ul li{
+    padding: 10px;
+}
+
 input {
     border-radius: 20px;
-    height: 15px;
+    height: 21px;
     padding: 10px;
+    width: 220px;
+    
  }
 @media(max-width:600px){
     .container{
         max-width: 85%;
     }
+
+    header .container .btn_contact{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+    }
+
     header{
-        padding: 15px 0; 
+        padding: 35px 0; 
     }
     header .container{
         max-width: 300px;
@@ -185,7 +280,6 @@ input {
         justify-content: space-between;
         align-items: center;
     }
-
     nav{
         display: none;
     }
@@ -194,44 +288,104 @@ input {
         margin: auto;
         display: flex;
         flex-direction: column;
-        gap: 1px;
+        padding: 35px 0px;
+        
     }
+ 
     main .container img{
         width: 100%;
+        padding-bottom: 20px;
     }
     main .container h1{
         line-height: 1.2em;
         font-size: 40px;
         
     }
-    .description h1{
-        padding: 4% 0%;
+    .description{
+        gap:20px;
+        padding-left: 0px;
     }
-
-    .seccion__verde{
+    .description h3, .description h1{
+        
+        padding-left: 0px;
+    }
+    
+    .titulo__tarjeta{
+        justify-content: start;
+    }
+    .seccion__franja, .seccion__franja .container p{
         background-color: aqua;
+        padding: 0px;
+        max-width: 100%;
+    }
+    .titulo_texto{
+        background-color: #e5c4fd;
+        padding: 10px 0px ;
+        width: 300px;
+        position: absolute;
+        right:  0px;
+        
+    }
+    
+    .titulo_texto h3{
+        margin-left: 50px;   
+        font-size: 12px;
+        color: black;
+    }
+    .btn__morado{
+        z-index: 1;
+    }
+    .seccion__franja .container{
+        flex-direction: column;
     }
     .seccion__tarjetas{
         padding: 0px 10px;
     }
+    .seccion__perfil{
+        padding: 30px 20px;
+    }
+    .seccion__perfil h2{
+        font-size: 6vh;
+        text-align: center;
+    }
     .seccion__perfil .container{
         flex-direction: column;
+        justify-content: center;
+    }
+    .seccion__perfil .container .card{
+        display: none;
+    }
+    .seccion__perfil .container .card:first-child{
+        display: block;
+    }
+    .franja_final{
+        text-align: center;
     }
 
     .enlaces{
         display: flex;
         flex-direction: row;
-      
-        color: white;
+        color: #FFFFFF;
     }
+/* Uso del Important solo por fines educativos  */
+    .btn_fin{
+        background-color: #232C50 !important;
+        color: white !important;
+    }
+
     footer{
         background-color: black;
-        padding: 0px; 
+        padding: 30px 0px; 
         align-items: center;
+    }
+    .icons{
+        gap: 35px;
+        padding-bottom: 30px;
     }
     footer .container{
         display: flex;
         flex-direction: column;
+        flex-wrap: wrap-reverse;
         margin: auto;
         padding: 10px 10px;
         color: wheat;
